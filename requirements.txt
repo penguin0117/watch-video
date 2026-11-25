@@ -1,0 +1,16 @@
+# --- browser harvest (acquire.py) ---
+playwright>=1.45
+
+# --- local speech-to-text (transcript.py) ---
+faster-whisper>=1.2.0
+
+# PyAV 14.x removed the `metadata_errors` kwarg that faster-whisper 1.2 passes,
+# which crashes the decoder at import time. Stay on 13.x.
+av==13.1.0
+
+# Optional: native captions / direct downloads when a page exposes a plain URL
+# yt-dlp>=2024.1.0
+
+# ffmpeg + ffprobe are NOT pip packages. Install them with your package manager
+# (winget install Gyan.FFmpeg / brew install ffmpeg / apt install ffmpeg) and
+# make sure both are on PATH.

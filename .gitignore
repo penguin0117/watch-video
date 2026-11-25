@@ -1,0 +1,20 @@
+# virtualenv the skill builds for itself
+.venv/
+venv/
+
+# the persistent browser profile that holds login sessions — never commit, it
+# contains the user's cookies
+.browser-profile/
+
+# work directories / artifacts
+out/
+work/
+*.mp4
+*.m4a
+*.wav
+segments/
+
+# python
+__pycache__/
+*.py[cod]
+.DS_Store
